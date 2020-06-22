@@ -1,0 +1,722 @@
+html, body {
+    background-color: #303030;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: whitesmoke;
+    font-family: Raleway;
+}
+
+button {
+    background-color: #686868;
+    border: solid gray;
+    border-width: 0.5px;
+    border-radius: 3px;
+    color: whitesmoke;
+    font-size: 15pt;
+    min-width: 100px;
+}
+.productimage{
+    max-width:100%;
+    max-height:100%;
+}
+a {
+    color: whitesmoke;
+}
+
+.accordion {
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    padding: 20px 0;
+}
+
+.active, .accordion:hover {
+    background-color: #686868;
+}
+
+#accordionPanel {
+    padding: 0 18px;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.outerContentBoxTitle {
+    font-size: 48pt;
+    padding: 10px 30px;
+    vertical-align: bottom;
+    height: 125px;
+    position: relative;
+}
+
+.outerContentBoxTitleText {
+    position: absolute;
+    bottom: 0;
+}
+
+.outerContentBoxTitleLogo {
+    height: 150px;
+    width: auto;
+    float: right;
+}
+
+.outerContentBox {
+    border: solid gray;
+    border-width: 2px;
+    border-radius: 10px;
+    position: absolute;
+    margin: 25px;
+    margin-top: 155px;
+    margin-bottom: 60px;
+    padding: 25px;
+    overflow: auto;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    background-color: #1E1E1E;
+}
+
+.contentBoxTitle {
+    margin-top: 10px;
+    font-size: 40pt;
+    text-align: center;
+}
+
+.contentBoxSubTitle {
+    margin-top: 5px;
+    font-size: 25pt;
+    text-align: left;
+}
+
+.contentBoxContent {
+    padding-top: 10px;
+    font-size: 15pt;
+}
+
+.fieldPack {
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.fieldTitle {
+    display: flex;
+    width: 100%;
+    font-size: 18pt;
+}
+
+.field {
+    margin-top: 5px;
+    width: 100%;
+    height: 25px;
+    background-color: #454545;
+    border: solid white;
+    border-width: 1px;
+    padding: 5px;
+    font-size: 16pt;
+    caret-color: white;
+    color: white;
+}
+
+.field:invalid {
+    border-left: solid red;
+    caret-color: red;
+}
+
+.non-matching {
+    border: solid orange;
+    border-width: 1px;
+    caret-color: orange;
+}
+
+.button {
+    width: 110px;
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 0; 
+    right: 0;
+}
+
+.welcome-button {
+    width: 150px;
+    vertical-align: middle;
+    bottom: -26px;
+}
+
+.linkPack {
+    padding: 3px;
+}
+
+.registerFormTable {
+    width: 100% !important;
+}
+
+.buttonFooter {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+
+#loginContentBox {
+    margin: auto;
+    width: 450px;
+    height: 400px;
+    background-color: #404040;
+}
+
+#loginButtonHolder {
+    width: 100%;
+    padding: 30px;
+}
+
+#loginAssistantLinks {
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+#loginErrorText {
+    color: #ff504a;
+}
+
+#loginLogo {
+    margin: 40px;
+    position: absolute;
+    max-height: 175px;
+    width: auto;
+}
+
+#nextButton {
+    margin-right: 25px;
+}
+
+#previousButton {
+    margin-right: 140px;
+}
+#editDetailsButton {
+    margin-right: 140px;
+    width: 140px;
+}
+#welcomeButton {
+    margin-right: 140px;
+    width: 170px;
+}
+#viewLogsButton{
+    margin-left: 28px;
+    width: 200px;
+}
+#addButton {
+    margin-right: 25px;
+    width: 180px;
+}
+
+#ordersTable {
+    width: 100% !important;
+}
+
+.orderCell {
+    text-align: left;
+    border-bottom: solid gray 1px !important;
+    height: 50px;
+}
+
+.shippingTitleCell {
+    text-align: left;
+    border-bottom: solid gray 1px !important;
+    height: 40px;
+    width: 15%;
+}
+
+.shippingDataCell {
+    text-align: left;
+    border-bottom: solid gray 1px !important;
+    height: 40px;
+    width: 50%;
+}
+
+.orderHeaderCell {
+    text-align: left;
+    width: auto;
+    font-size: 15pt;
+    border-bottom: solid white 1px !important;
+}
+.orderIDHeaderCell {
+    text-align: left;
+    width: 500px;
+    font-size: 15pt;
+    border-bottom: solid white 1px !important;
+}
+
+#itemsColumn {
+    width: 40%;
+}
+
+.mainContentBox {
+    border: solid gray;
+    border-width: 2px;
+    border-radius: 10px;
+    position: absolute;
+    margin: 25px;
+    margin-top: 180px;
+    margin-bottom: 60px;
+    padding: 25px;
+    overflow: auto;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    background-color: #1E1E1E;
+    text-align: right;
+}
+
+.mainContentBoxProduct {
+    border: solid gray;
+    border-width: 2px;
+    border-radius: 10px;
+    position: absolute;
+    margin: 25px;
+    margin-top: 115px;
+    margin-bottom: 60px;
+    padding: 25px;
+    overflow: auto;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    background-color: #1E1E1E;
+    text-align: right;
+}
+
+.productDetailBox{
+    max-height: 300px;
+    border: solid grey;
+    text-align: center;
+    padding: 8px;
+    margin: 10px;
+    background-color: #252525;
+    border: solid gray;
+    border-width: 2px;
+    border-radius: 10px;
+}
+.productDetailBox img {
+    height: auto;
+    max-width: 100%;
+    max-height: 180px;
+}
+
+.mainContentBoxTitleLogo {
+    height: 200px;
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.mainContentBoxTitleText {
+    font-size: 36pt;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mainContentBoxTitle {
+    height: 250px;
+    width: 100%;
+    text-align: center;
+}
+
+.mainContentBoxTitleSearch {
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Raleway, FontAwesome;
+    width: 275px;
+    height: 20px;
+    background-color: #454545;
+    border: solid white;
+    border-width: 1px;
+    padding: 5px;
+    font-size: 16pt;
+    caret-color: white;
+    color: white;
+}
+.productPath{
+    margin-left:28px;
+    font-size: 15pt;
+    margin-bottom: 10px;
+}
+#productsTable {
+    width: 100% !important;
+    margin-top: 10px;
+    table-layout: fixed;
+}
+
+.productBox {
+    max-height: 250px;
+    border: solid grey;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: #252525;
+    border: solid gray;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.productBox img {
+    height: auto;
+    max-width: 100%;
+    max-height: 180px;
+}
+
+#productPageBox {
+    width: 40%;
+}
+
+.productDescription {
+    padding-left: 20px;
+    text-align: left;
+}
+
+#productTitle {
+    text-align: left;
+    padding-left: 30px;
+}
+
+#productButton {
+    max-width: 150px;
+    background-color: #686868;
+    border: solid gray;
+    border-width: 0.5px;
+    border-radius: 3px;
+    color: whitesmoke;
+    font-size: 12pt;
+}
+
+.header {
+    height: 50px;
+    padding: 5px;
+    background-color: #1E1E1E;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.headerItem {
+    font-size: 14pt;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.headerLogo{
+    object-fit:contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+    
+#cartLink {
+    max-height: 45px;
+    width: auto;
+    margin: 5px;
+}
+
+.not-enough-stock-warning {
+    color: #ff504a;
+}
+
+#headerLogOut {
+    background-color: #686868;
+    border: solid gray;
+    border-width: 0.5px;
+    border-radius: 3px;
+    color: whitesmoke;
+    font-size: 12pt;
+}
+
+#logOutContentBox {
+    max-height: 100%;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    border: none;
+    background-color: #303030;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#logOutContent {
+    text-align: center;
+}
+
+#logOutLogo {
+    max-height: 60%;
+}
+
+.column {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+}
+
+#imageColumn {
+  left: 0;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+#mainColumn {
+  right: 0;
+  background-color: #303030;
+}
+
+#landingContentBox {
+    margin: auto;
+    width: 70%;
+    height: auto;
+    max-height: 70%;
+    padding: 20px;
+    background-color: #404040;
+    text-align: center;
+}
+
+#landingLogo {
+    max-height: 45%;
+    margin-bottom: -40px;
+}
+
+#mainButtonHolder {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+#shoppingButton {
+    order: 1;
+    margin: 10px;
+}
+
+#logInButton {
+    order: 2;
+    margin: 10px;
+}
+
+.carouselImage {
+    max-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.productTitleText {
+    font-size: 24pt;
+    text-align: center;
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+.productAddToCartt {
+    float: right;
+    width: 100%;
+}
+
+.productDetails {
+    margin-left: 3px;
+}
+
+.directory {
+    margin: 25px; 
+}
+
+#cartTitle {
+    text-align: left;
+    margin-left: 30px;
+}
+
+#imageCell {
+    text-align: center;
+}
+
+.cartTableImage {
+    max-height: 100px;
+    margin: 5px;
+}
+
+.quantityField {
+    margin-top: 5px;
+    background-color: #454545;
+    border: solid white;
+    border-width: 1px;
+    font-size: 14pt;
+    caret-color: white;
+    color: white;
+}
+
+.quantityButton {   
+    background-color: #686868;
+    border: solid gray;
+    border-width: 0.5px;
+    border-radius: 3px;
+    color: whitesmoke;
+    font-size: 15pt;
+    min-width: 20px;
+    text-align: center;
+}
+
+.productStatus {
+    float: right;
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:500px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:500px;
+}
+
+#shippingTable {
+    width: 100% !important;
+    table-layout: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+#shippingContentBox {
+    text-align: right;
+}
+
+#backButton{
+    margin-right: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+
+.col-25 {
+    flex: 25%;
+}
+
+.col-50 {
+    flex: 20%;
+}
+
+.col-75 {
+    flex: 50%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0px 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+    color: white;
+}
+
+#confirmationTitle {
+    height: 75px;
+}
+
+@media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+}
+
+textarea.field {
+    height: 100px;
+    font-family: Raleway, sans-serif;
+}
+
+.productPreviewText{
+    display: inline;
+}
+
+.previewField {
+    width: 98%;
+}
+
+input[type=search] {
+	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	font-family: Raleway, FontAwesome;
+    width: 90px;
+    height: 35px;
+    background-color: #454545;
+    border: solid white;
+    border-width: 1px;
+    padding: 9px 10px 9px 32px;
+    font-size: 10pt;
+    caret-color: white;
+    color: white;
+    margin:15px;
+	
+	-webkit-border-radius: 5em;
+	-moz-border-radius: 5em;
+	border-radius: 5em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+input[type=search]:focus {
+	width: 200px;
+	background-color: #454545;
+	border-color:solid white;
+}
+
+.query-label {
+    text-align: left;
+    font-size: 12pt;
+}
+
+.searchable-table-header {
+    vertical-align: top;
+}
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+.link-button { 
+    background: none;
+    border: none;
+    color: whitesmoke;
+    text-decoration: underline;
+    font-family: Raleway, sans-serif;
+    font-size: 14pt;
+    cursor: pointer; 
+}

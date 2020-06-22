@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>IOTBay ~ Landing</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="carousel(0)">
+        <div class="column" id="imageColumn">
+            <img src="media/gallery/google-home-hub.jpg" alt="Google Home Hub" class="carouselImage">
+            <img src="media/gallery/remote.jpg" alt="Remote" class="carouselImage">
+            <img src="media/gallery/smart-fridge.jpg" alt="Smart Fridge" class="carouselImage">
+            <img src="media/gallery/smart-light.jpg" alt="Smart Light" class="carouselImage">
+        </div>
+        <div class="column" id="mainColumn">
+            <div class="outerContentBox" id="landingContentBox">
+                <img src="media/IOTBayLogo.png" alt="IOTBay Logo" id="landingLogo">
+                <p class="contentBoxContent" align="left">What is IOT? IOT refers to the Internet Of Things, and refers to technology that becomes part of our homes that is now connected to a network.</p> 
+                <p class="contentBoxContent" align="left">About IOTBay: We're a small IOT Technology store, with our warehouse in Sydney, Australia. We sell a variety of IOT Devices, allowing you to create the perfect smarthome.</p>
+                <form>
+                    <div id="mainButtonHolder">
+                        <button id="shoppingButton" onClick="form.action='main.jsp';">Start Shopping</button>
+                        <button id="logInButton" onClick="form.action='login.jsp';">Log In</button>
+                    </div>
+                </form>
+                <a href="register.jsp">Don't have an account? Register here</a>
+            </div>
+        </div>
+    </body>
+</html>

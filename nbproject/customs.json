@@ -1,0 +1,11 @@
+{
+    "elements": {},
+    "attributes": {
+        "color": {
+            "context": "body"
+        },
+        "name": {
+            "context": "label"
+        }
+    }
+}

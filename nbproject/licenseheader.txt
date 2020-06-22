@@ -1,0 +1,9 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Shoryu Das-Zaman, April 2020
+${licensePrefix}www.github.com/ShoryuDZ
+${licensePrefix}Created for 41025 Introduction to Software Development, IOTBay Assignment
+<#if licenseLast??>
+${licenseLast}
+</#if>
